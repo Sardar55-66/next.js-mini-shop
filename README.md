@@ -20,17 +20,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Сделано:
+- Реализовал визуал по фигме
+- адаптировал под мобильные устройства и планшеты
+- наполненил контентом отзывов из html обернутого в json
+- наполненил контентом товары по апи
+- показываю первую страницу сразу
+- при нажатии на кнопку "купить", она меняется на кнопки + и - и поле для ввода кол-ва товара, значение -  1, кнопки добавляют т отбавляют товар, так же есть возможность вписать в поле для ввода любое кол-во.
+- при изменении кол-ва какого-либо из товаров меняется информация в корзине (та что над полем с телефоном)
+- набранные товары и введенный номер телефона сохраняются при перезагрузки страницы
+- есть маска в поле для телефона
+- при нажатии кнопки "заказать" идет проверка того что телефон полностью введен
+    - если всё хорошо - отправляю запрос на сервер
+    - если есть ошибки - подсвечиваю соответствующие поля красным (поле номера телефона)
+- после отправки запроса и получения ответа от сервера отображаю попап что всё успешно
